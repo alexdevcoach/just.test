@@ -27,6 +27,19 @@
 	</div><!-- header -->
 
 	<div id="mainmenu">
+
+		<?php if (!Yii::app()->user->isGuest) { ?>
+			<div style="float:right">
+			<?php $this->widget('zii.widgets.CMenu',array(
+					'items'=>array(
+						array('label'=>'Менеджеры и Руководители', 'url'=>array('/users/assign')),
+						array('label'=>'Пользователи', 'url'=>array('/users/admin')),
+						array('label'=>'Роли', 'url'=>array('/roles/admin')),
+					),
+				)); ?>
+		</div>
+		<?php } ?>
+
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),

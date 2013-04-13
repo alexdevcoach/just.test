@@ -55,7 +55,7 @@ body
 #mainmenu ul
 {
 	padding:6px 20px 5px 20px;
-	margin:0px;
+	margin:0;
 }
 
 #mainmenu ul li
@@ -193,7 +193,7 @@ div.search-form
 
 .portlet-content li
 {
-	padding: 2px 0 4px 0px;
+	padding: 2px 0 4px 0;
 }
 
 .operations
@@ -226,4 +226,30 @@ div.search-form
 .operations li a:hover
 {
 	background: #80CFFF;
+}
+
+.narrow {
+	width: 40px;
+	white-space: nowrap;
+}
+#actions-menu {
+	float: right;
+	margin-bottom:0;
+}
+#actions-menu li {
+	display: inline;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.assign-widget {
+	margin: 3px;
+	padding: 4px;
+	border: 1px solid #cccccc;
+}
+.assign-widget .grid-view {
+	margin:0;
+	padding: 0;
+}
+.assign-widget .grid-view .items {
+	margin: 0;
 }
